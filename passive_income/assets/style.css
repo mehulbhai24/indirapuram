@@ -1,0 +1,226 @@
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+.navbar{
+   background-color: oldlace;
+   display: flex;
+   flex-direction: row;
+   justify-content: space-between;
+}
+.rightie{
+    margin-right: 300px;
+    display: flex;
+    justify-content: space-evenly;
+}
+.rightie a{
+    margin: 30px 25px 25px 25px;
+    font-size: 22.5px;
+}
+.leftie{
+    margin: 25px 25px 25px 300px;
+    font-size: 2em;
+}
+a{
+    text-decoration: none;
+}
+h1{
+    margin: 50px 0 20px 0;
+    text-align: center;
+    font-size: 3.5em;
+    font-weight: bold;
+    color: #423a3a;
+    font-family:-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif
+}
+.byline{
+    text-align: center;
+    font-style: italic;
+    font-size: 1.25em;
+    margin-bottom: 0;
+    color: #423a3a;
+    line-height: 25px;
+}
+h2{
+    text-align: center;
+    font-size: 2.5em;
+    font-weight: bold;
+    color: #423a3a;
+}
+.info{
+    padding-top: 25px;
+    padding-bottom: 25px;
+    max-width: 840px;
+    line-height: 30px;
+    margin: auto;
+    margin-top: 60px;
+}
+.info p{
+    font-size: 1.25em;
+    width: 60%;
+    margin: auto;
+    color: #423a3a;
+    text-align: center;
+    margin-top: 20px;
+}
+.explore{
+    text-align: center;
+    margin-top: 75px;
+    color: #6f7579;
+    font-size: 1.75em;
+    line-height: 40px;
+}
+html{
+    font-family:-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif
+}
+footer{
+    text-align: center;
+    background-color: oldlace;
+    padding: 25px 0 25px 0;
+    margin: 25px 0 0 0;
+}
+.card{
+    border: solid 2px white;
+    border-radius: 18px;
+    box-shadow: 5px 5px 10px rgba(221, 214, 214, 0.9);
+    padding: 25px;
+    margin-top: 75px;
+    font-size: 1.75em;
+    color: #423a3a;
+    text-align: center;
+    color: #3b1163;
+}
+.displayer{
+    margin-left: 20%;
+    font-size: 1.25em;
+    margin-top: 10px;
+    font-weight: bold;
+}
+.container{
+    display: flex;
+    flex-direction: row;
+    justify-content:space-evenly;
+    flex-wrap: wrap;
+}
+
+.post p{
+    margin-top: 50px;
+    font-size: 1.25em;
+    color: #423a3a;
+    margin-left: 20%;
+    margin-right: 20%;
+    line-height: 30px;
+}
+hr{
+    margin-left: 20%;
+    margin-right: 20%;
+    margin-top: 25px;
+}
+.post h2{
+    
+    font-size: 3em;
+    margin-top: 40px;
+    margin-left: 20%;
+    margin-right: 20%;
+    text-align: start;
+}
+img{   
+    display: block;
+    max-width: 500px;
+    margin-left: 20%;
+    margin-top: 20px;
+}
+@media (max-width:1270px){
+    .rightie{
+        margin-right: 0px;
+    }
+    .leftie{
+        margin-left: 10px;
+    }
+}
+.centering{
+    margin: auto;
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+}
+@media (max-width:660px){
+    .leftie{
+        display: none;
+    }
+    .rightie{
+        margin: auto;
+    }
+    .explore{
+        margin-top: 30px;
+    }
+    .centering{
+        display: none;
+    }
+    img{
+        width: 60%;
+        margin-left: 10%;
+    }
+    .post p{
+        font-size: 1.1em;
+        line-height: 30px;
+        margin-left: 10%;
+        margin-right: 10%;
+    }
+    .post h2{
+        margin-left: 10%;
+        margin-right: 10%;
+    }
+    .displayer{
+        margin-left: 10%;
+        margin-right: 10%;
+    }
+
+}
+.styling{
+    background-color: oldlace;
+}
+
